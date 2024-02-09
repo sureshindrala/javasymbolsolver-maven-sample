@@ -28,6 +28,18 @@
         </dependency>
         <!-- JavaParser itself is not a dependency here. It gets included indirectly through java-symbol-solver-core -->
     </dependencies>
+         <distributionManagement>
+    <repository>
+        <id>nexus</id>
+        <name>first-release</name>
+        <url>http://34.16.157.62:8081/repository/first-release/</url>
+    </repository>
+      <secondRepository>
+        <id>nexus</id>
+        <name>first-snapshot</name>
+        <url>http://34.16.157.62:8081/repository/first-snapshot/</url>
+    </secondRepository>
+    </distributionManagement>
     <!-- This blob of configuration tells Maven to make the jar executable. You can run it with:
     mvn clean package
     java -jar target/javasymbolsolver-maven-sample-1.0-SNAPSHOT-shaded.jar
