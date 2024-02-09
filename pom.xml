@@ -11,16 +11,14 @@
     <!-- The version of this project. SNAPSHOT means "we're still working on it" -->
     <version>1.0-SNAPSHOT</version>
         <properties>
-        <!-- Tell Maven we want to use Java 8 -->
+                         <!-- Tell Maven we want to use Java 8 -->
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <!-- Tell Maven to treat all source files as UTF-8 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-         <properties>
-    <sonar.host.url>http://34.125.27.233:9000/</sonar.host.url>
+     <sonar.host.url>http://34.125.27.233:9000/</sonar.host.url>
     <sonar.login>sqa_5588e7e647af25dd14242a6648e41499046941d5</sonar.login>
-       </properties>  
+    </properties>
     <dependencies>
         <!-- Here are all your dependencies. Currently only one. These are automatically downloaded from https://mvnrepository.com/ -->
         <dependency>
