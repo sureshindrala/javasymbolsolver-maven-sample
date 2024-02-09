@@ -10,8 +10,7 @@
     <artifactId>javasymbolsolver-maven-sample</artifactId>
     <!-- The version of this project. SNAPSHOT means "we're still working on it" -->
     <version>1.0-SNAPSHOT</version>
-    
-    <properties>
+        <properties>
         <!-- Tell Maven we want to use Java 8 -->
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -31,8 +30,6 @@
         </dependency>
         <!-- JavaParser itself is not a dependency here. It gets included indirectly through java-symbol-solver-core -->
     </dependencies>
-
-
     <!-- This blob of configuration tells Maven to make the jar executable. You can run it with:
     mvn clean package
     java -jar target/javasymbolsolver-maven-sample-1.0-SNAPSHOT-shaded.jar
@@ -62,5 +59,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
